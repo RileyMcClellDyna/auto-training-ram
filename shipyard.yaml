@@ -11,4 +11,4 @@ spec:
             - name: "saygoodbye"
         - name: "sequence2"
           tasks:
-            - name: "sayyellow"
+            - name: "sayhello"
