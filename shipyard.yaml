@@ -17,6 +17,6 @@ spec:
             - event: "dev.sequence2.finished"
               selector:
                 match:
-                  evaluation.result: "true"
+                  evaluation.result: "fail"
           tasks: 
             - name: "saysequence3"
