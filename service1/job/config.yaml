@@ -23,3 +23,9 @@ actions:
           - echo
         args:
           - 'hello ubuntu'
+      - name: "Shello"
+        image: "ubuntu"
+        files:
+          - shell/shello.sh
+        cmd:
+          - ./keptn/shell/shello.sh
