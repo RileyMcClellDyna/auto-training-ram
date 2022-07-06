@@ -14,9 +14,6 @@ spec:
             - name: "sayhello"
         - name: "sequence3"
           triggeredOn:
-            - event: "dev.sequence2.finished"
-              selector:
-                match:
-                  evaluation.result: "fail"
+            - event: "sh.keptn.event.sayhello.triggered"
           tasks: 
             - name: "saysequence3"
