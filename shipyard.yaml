@@ -7,6 +7,11 @@ spec:
     - name: "dev"
       sequences:
         - name: "sequence1"
+          triggeredOn:
+            - event: "dev.sequence2.finished"
+              selector:
+                match:
+                  evaluation.result: "fail"
           tasks: 
             - name: "saygoodbye"
         - name: "sequence2"
