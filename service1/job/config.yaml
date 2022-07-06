@@ -28,11 +28,6 @@ actions:
         files:
           - /job/shell/shello.sh
         cmd:
-          - sudo
+          - cat
         args:
-          - chmod
-          - 755
-          - /keptn/job/shell/shello.sh
-          - &&
-          - sh
-          - /keptn/job/shell/shello.sh
+          - /job/shell/shello.sh
