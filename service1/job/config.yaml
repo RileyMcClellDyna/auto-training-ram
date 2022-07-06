@@ -32,6 +32,6 @@ actions:
         args:
           - 755
           - /keptn/job/shell/shello.sh
-          - &
+          - &&
           - sh
           - /keptn/job/shell/shello.sh
