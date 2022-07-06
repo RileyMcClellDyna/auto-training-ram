@@ -17,3 +17,9 @@ actions:
           - echo
         args:
           - 'hello world again'
+      - name: "Say ubuntu"
+        image: "ubuntu"
+        cmd:
+          - echo
+        args:
+          - 'hello ubuntu'
