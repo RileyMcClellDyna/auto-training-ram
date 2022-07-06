@@ -28,6 +28,6 @@ actions:
         files:
           - /job/shell/shello.sh
         cmd:
-          - cat
+          - sh
         args:
-          - /keptn/job/shell/shello.sh
+          - "/keptn/job/shell/shello.sh"
