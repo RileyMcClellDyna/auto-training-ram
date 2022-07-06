@@ -15,16 +15,5 @@ spec:
         - name: "sequence3"
           triggeredOn:
             - event: "dev.sequence2.finished"
-                selector:
-                  match:
-                    result: failed
           tasks: 
             - name: "saysequence3"
-        - name: "sequence4"
-          triggeredOn:
-            - event: "dev.sequence2.finished"
-                selector:
-                  match:
-                    result: success
-          tasks: 
-            - name: "saysequence4"
