@@ -8,4 +8,7 @@ spec:
       sequences:
         - name: "sequence1"
           tasks: 
-            - name: "sayhello"
+            - name: "saygoodbye"
+        - name: "sequence2"
+          tasks:
+            - name: "sayyellow"
