@@ -28,4 +28,4 @@ actions:
         files:
           - shell/shello.sh
         cmd:
-          - ./keptn/shell/shello.sh
+          - /keptn/shell/shello.sh
