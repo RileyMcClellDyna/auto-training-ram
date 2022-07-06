@@ -30,4 +30,4 @@ actions:
         cmd:
           - cat
         args:
-          - /job/shell/shello.sh
+          - /keptn/job/shell/shello.sh
