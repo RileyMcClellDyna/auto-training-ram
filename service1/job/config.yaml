@@ -28,8 +28,9 @@ actions:
         files:
           - /job/shell/shello.sh
         cmd:
-          - chmod
+          - sudo
         args:
+          - chmod
           - 755
           - /keptn/job/shell/shello.sh
           - &&
