@@ -13,4 +13,4 @@ spec:
           triggeredOn:
             - event: "dev.sequence2.finished"
           tasks: 
-            - name: "saysequence3"
+            - name: "saygoodbye"
