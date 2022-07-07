@@ -11,10 +11,3 @@ spec:
       subscriptionID: e5ac4fc1-77f7-4d5f-8a8d-746be012be5b
       sendFinished: false
       sendStarted: false
-    - type: sh.keptn.event.sayhello.finished
-      requests:
-        - >-
-          curl --request GET https://xzv52984.live.dynatrace.com/api/v1/time
-      subscriptionID: e9b88dda-ecb4-41cb-aad7-6fd5022a92ad
-      sendFinished: false
-      sendStarted: false
