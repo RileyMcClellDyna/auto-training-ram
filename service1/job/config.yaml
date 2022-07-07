@@ -5,24 +5,6 @@ actions:
     events:
       - name: "sh.keptn.event.sayhello.triggered"
     tasks:
-      - name: "Say Hello World"
-        image: "alpine"
-        cmd:
-          - echo
-        args:
-          - 'hello world'
-      - name: "Say Hello World again"
-        image: "alpine"
-        cmd:
-          - echo
-        args:
-          - 'hello world again'
-      - name: "Say ubuntu"
-        image: "ubuntu"
-        cmd:
-          - echo
-        args:
-          - 'hello ubuntu'
       - name: "Shello"
         image: "ubuntu"
         files:
@@ -30,8 +12,7 @@ actions:
         cmd:
           - sh
         args:
-          - "/keptn/job/shell/shello.sh"
-          
+          - "/keptn/job/shell/shello.sh"          
   - name: "Say sequence 3"
     events:
       - name: "sh.keptn.event.saysequence3.triggered"
