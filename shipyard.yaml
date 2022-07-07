@@ -11,7 +11,7 @@ spec:
             - name: "sayhello"
             - name: "evaluation"
               properties:
-                timeframe: 15m
+                timeframe: 30m
         - name: "sequence3"
           triggeredOn:
             - event: "dev.sequence2.finished"
