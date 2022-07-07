@@ -31,3 +31,14 @@ actions:
           - sh
         args:
           - "/keptn/job/shell/shello.sh"
+          
+  - name: "Say sequence 3"
+    events:
+      - name: "sh.keptn.event.saysequence3.triggered"
+    tasks:
+      - name: "Say Sequence 3"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - 'Sequence 3 Webhook'
