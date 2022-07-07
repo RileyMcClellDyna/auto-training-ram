@@ -12,4 +12,14 @@ actions:
         cmd:
           - sh
         args:
-          - "/keptn/job/shell/shello.sh"          
+          - "/keptn/job/shell/shello.sh"
+  - name: "sequence3"
+    events:
+      - name: "sh.keptn.event.saygoodbye.triggered"
+    tasks:
+      - name: "Say Sequence 3"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - 'Sequence 3 Webhook'
