@@ -9,6 +9,9 @@ spec:
         - name: "sequence2"
           tasks:
             - name: "sayhello"
+            - name: "evaluation"
+              properties:
+                timeframe: 30m
         - name: "sequence3"
           triggeredOn:
             - event: "dev.sequence2.finished"
