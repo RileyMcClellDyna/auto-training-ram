@@ -4,13 +4,6 @@ metadata:
   name: webhook-configuration
 spec:
   webhooks:
-    - type: sh.keptn.event.saygoodbye.finished
-      requests:
-        - >-
-          curl --request POST --data '{"result":"The result was {{.data.result}}"}' https://webhook.site/aaac62ee-7a1f-48b4-b9f6-a8d167358ad8
-      subscriptionID: e5ac4fc1-77f7-4d5f-8a8d-746be012be5b
-      sendFinished: false
-      sendStarted: false
     - type: sh.keptn.event.evaluation.finished
       requests:
         - >-
