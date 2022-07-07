@@ -9,3 +9,8 @@ spec:
         - name: "sequence2"
           tasks:
             - name: "sayhello"
+        - name: "sequence3"
+          triggeredOn:
+            - event: "dev.sequence2.finished"
+          tasks: 
+            - name: "saysequence3"
