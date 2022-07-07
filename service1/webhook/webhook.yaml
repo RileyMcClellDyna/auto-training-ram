@@ -1,0 +1,13 @@
+apiVersion: webhookconfig.keptn.sh/v1alpha1
+kind: WebhookConfig
+metadata:
+  name: webhook-configuration
+spec:
+  webhooks:
+    - type: sh.keptn.event.evaluation.finished
+      requests:
+        - >-
+          curl --request POST --data '{"result":"The result was {{.data.evaluation.result}} with score {{.data.evaluation.score}}"}' https://webhook.site/aaac62ee-7a1f-48b4-b9f6-a8d167358ad8
+      subscriptionID: e9b88dda-ecb4-41cb-aad7-6fd5022a92ad
+      sendFinished: false
+      sendStarted: false
