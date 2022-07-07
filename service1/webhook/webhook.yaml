@@ -14,7 +14,7 @@ spec:
     - type: sh.keptn.event.sayhello.started
       requests:
         - >-
-          curl --request GET --data '{"say hello":"started"}' https://webhook.site/d97800a6-3197-4276-9616-c0b903cc7561
+          curl --request POST --data '{"say hello":"started"}' https://webhook.site/d97800a6-3197-4276-9616-c0b903cc7561
       subscriptionID: e9b88dda-ecb4-41cb-aad7-6fd5022a92ad
       sendFinished: false
       sendStarted: false
