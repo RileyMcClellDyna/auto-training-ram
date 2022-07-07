@@ -4,7 +4,7 @@ metadata:
   name: webhook-configuration
 spec:
   webhooks:
-    - type: sh.keptn.event.saysequence3.started
+    - type: sh.keptn.event.sayhello.finished
       requests:
         - >-
           curl --header 'Content-Type: application/json' --request POST --data '{"result":"The result was {{.data.finished}}"}' https://webhook.site/b98b07d5-4b44-4af0-af22-6291159da3fc
