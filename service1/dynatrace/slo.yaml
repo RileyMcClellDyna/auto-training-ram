@@ -1,0 +1,28 @@
+spec_version: "1.0"
+comparison:
+  aggregate_function: "avg"
+  compare_with: "single_result"
+  include_result_with_score: "pass"
+  number_of_comparison_results: 1
+filter:
+objectives:
+  - sli: "load_time"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<200"    
+    warning:        
+      - criteria:
+          - "<=300"
+    weight: 1
+  - sli: "Automation_Training_SLO"
+    key_sli: false
+    pass:
+      - criteria:
+          - ">99.00"
+    warning:        
+      - criteria:
+          - ">98.00"
+total_score:
+  pass: "90%"
+  warning: "75%"
